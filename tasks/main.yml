@@ -1,0 +1,12 @@
+---
+
+- name: Do templating
+  template:
+    src: 'tmp/foo.j2'
+    dest: '/tmp/foo'
+
+- name: Copy files
+  copy:
+    src: 'tmp/example/'
+    dest: '/tmp/example/'
+
